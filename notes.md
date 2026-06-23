@@ -1,6 +1,6 @@
 What is the DOM?
 DOM (Document Object Model) is a tree-like representation of an HTML or XML document.
-Each element (like <div>, <p>, <h1>) is a node in the tree.
+<!-- Each element (like <div>, <p>, <h1>) is a node in the tree. -->
 Nodes have relationships: parent, child, sibling, descendant.
 JavaScript can traverse, modify, add, or remove these nodes.
 
