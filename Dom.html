@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="title">Hello DOM!</h1>
+  <p class="info">This is a paragraph.</p>
+  <button id="btn">Click Me</button>
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>  
+<script>
+
+document.getElementById("title").textContent = "DOM is Powerful!";
+document.querySelector(".info").innerHTML = "<b>Updated with bold text</b>";
+document.getElementById("title").style.color = "blue";
+document.querySelector(".info").classList.add("highlight");
+
+
+
+
+
+</script>
+</body>
+</html>
