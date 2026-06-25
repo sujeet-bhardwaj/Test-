@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+     <div class="outer">
+        <div class="img-box">
+           <img src="images/gehra-hua.jpg" alt="">
+        </div>
+     <div class="song-title" id="songTitle">Gehra Hua</div>
+      <audio src="Song/Gehra Hua.mp3" controls id="audio"></audio>
+      <input type="range" id="range">
+     <div class="btn-action">
+       <i class="fa-solid fa-backward" onclick="Backward()"></i>
+        <i class="fa-solid fa-play" onclick="playPause()" id="playpausebtn"></i>
+        <i class="fa-solid fa-forward" onclick="forward()"></i>
+     </div>
+     </div>
+  <script src="JS/Script.js"></script>
+</body>
+</html>

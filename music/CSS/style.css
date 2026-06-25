@@ -1,0 +1,54 @@
+.outer {
+   min-height: 350px;
+   width: 330px;
+   border: 2px solid lightgray;
+   margin: 0 auto;
+   margin-top: 150px;
+   box-shadow: 8px 8px 10px 8px rgb(217, 213, 213);
+   border-radius: 10px;
+   background: #fdfdfd;
+   text-align: center;
+   padding: 15px;
+}
+
+.btn-action {
+    height: 50px;
+    width: 70%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.btn-action i{
+    font-size: 24px;
+    color: #333;
+    transition: transform 0.2s, color 0.2s;
+}
+.btn-action i:hover {
+    color: #f39c12; 
+    transform: scale(1.1);
+}
+.img-box img {
+    display: block;
+    height: 120px;
+    width: 120px;
+    margin: 13px auto;
+    border: 3px solid #a59f9f;
+    border-radius: 50%;
+    object-fit:cover;
+}
+#audio {
+    display: none;
+}
+
+
+.song-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    text-transform: capitalize;   
+}
+
+
+
