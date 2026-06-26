@@ -14,12 +14,23 @@
         </div>
      <div class="song-title" id="songTitle">Gehra Hua</div>
       <audio src="Song/Gehra Hua.mp3" controls id="audio"></audio>
-      <input type="range" id="range">
+      <div>
+          <span id="start">00:00</span>
+         <input type="range" id="range" value="0">
+         <span id="end">00:00</span>
+      </div>
      <div class="btn-action">
        <i class="fa-solid fa-backward" onclick="Backward()"></i>
         <i class="fa-solid fa-play" onclick="playPause()" id="playpausebtn"></i>
         <i class="fa-solid fa-forward" onclick="forward()"></i>
      </div>
+<div class="fetaure-btn">
+  <i class="fa-solid  fa-repeat"></i>
+  <i class="fa-solid fa-shuffle"></i>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-volume-high"></i>
+</div>
+
      </div>
   <script src="JS/Script.js"></script>
 </body>

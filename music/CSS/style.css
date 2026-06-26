@@ -50,5 +50,29 @@
     text-transform: capitalize;   
 }
 
+input{
+    cursor: pointer;
+}
+.fetaure-btn{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.fetaure-btn i {
+  font-size: 20px;     
+  opacity: 0.5;         
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.fetaure-btn i.active {
+  opacity: 1;           
+  font-size: 22px;       
+}
 
 
