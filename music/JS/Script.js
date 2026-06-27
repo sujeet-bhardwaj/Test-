@@ -6,22 +6,32 @@ const arr = [
   { "Title": "Ishq Jalakar", "img": "Dhurandhar.jpg", "song": "Ishq Jalakar.mp3" }
 ];
 
+
 let audio = document.querySelector("#audio");
 let img = document.querySelector(".img-box img");
 let title = document.querySelector("#songTitle"); 
 let btn=document.querySelector("#playpausebtn");
 let start=document.querySelector("#start");
 let end=document.querySelector("#end");
+let shuffle=document.querySelector("#shuffle");
+let repeat=document.querySelector("#repeat");
 
 let i = 0;
 let range=document.querySelector("#range");
-console.log(Math.floor(Math.random()*4))
 
 audio.ontimeupdate = () => {
   range.value = Math.floor(audio.currentTime);
   start.textContent=formatTime(range.value);
 if (audio.currentTime >= audio.duration) {
+  if(repeat.classList.contains("active")){
+    audio.currentTime=0;
+    if(btn.classList.contains("fa-pause")){
+  audio.play();
+  }
+  }
+  else{
     forward();
+  }
   }
 };
 range.oninput = () => {
@@ -43,8 +53,6 @@ function playPause() {
   if (btn.classList.contains("fa-play")) {
   btn.classList.replace("fa-play", "fa-pause");
   audio.play();
-  console.log(audio.currentTime)
-  console.log(audio.duration)
   } else {
     btn.classList.replace("fa-pause", "fa-play");
     audio.pause();
@@ -52,7 +60,12 @@ function playPause() {
 }
 
 function forward() {
+ if(shuffle.classList.contains("active")){
+  i=Math.floor(Math.random()*arr.length);
+ }
+else{
   i++;
+}
   if (i === arr.length) {
     i = 0;
   }
