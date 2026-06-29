@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+const student = {
+    name: "Sujeet",
+    age: 22,
+    course: "BCA"
+};
+
+const { name, age, course } = student;
+
+console.log(name);
+console.log(age);
+console.log(course);
+
+// const user = {
+//     name: "Sujeet",
+//     age: 22
+// };
+
+// const {
+//     name: fullName,
+//     age: userAge
+// } = user;
+
+// console.log(fullName);
+// console.log(userAge);
+
+// const user = {
+//     name: "Sujeet",
+//     address: {
+//         city: "Kanpur",
+//         state: "UP"
+//     }
+// };
+
+// const {
+//     address: {
+//         city,
+//         state
+//     }
+// } = user;
+
+// console.log(city);
+// console.log(state);
+const user = {
+    name2: "Sujeet",
+    age: 22,
+    city: "Kanpur"
+};
+
+const { name2, ...others } = user;
+
+console.log(name2);
+
+console.log(others);
+
+const arr = [1,2,3,4,5];
+
+const [first,...remaining] = arr;
+
+console.log(first);
+
+console.log(remaining);
+
+let a = 10;
+let b = 20;
+
+[a,b] = [b,a];
+
+console.log(a);
+console.log(b);
+
+
+const response = {
+    success: true,
+    data: {
+        user: {
+            name3: "Sujeet",
+            email: "abc@gmail.com"
+        }
+    }
+};
+
+const {
+    data: {
+        user: {
+            name3,
+            email
+        }
+    }
+} = response;
+
+console.log(name3);
+console.log(email);
+</script>
+
+
+</body>
+</html>
