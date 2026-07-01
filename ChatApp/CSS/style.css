@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.box{
+    width:400px;
+    min-height:300px;
+    margin:150px auto 0;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 5px 5px 30px 6px lightskyblue;
+    padding:10px;
+}
+
+.box textarea{
+    margin-bottom:15px;
+     font-size: 16px;
+}
+.box button{
+    display:block;
+    width: 100%;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
